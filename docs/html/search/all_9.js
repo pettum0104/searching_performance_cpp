@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['parent_0',['parent',['../struct_r_b_t_node.html#ac3c9d3ff3a5600c3e867b616c6e30f6a',1,'RBTNode']]]
+  ['main_0',['main',['../lab2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'lab2.cpp']]],
+  ['measuretime_1',['measureTime',['../lab2_8cpp.html#a00a6ac8c1884fc7b86786100bf130e2d',1,'lab2.cpp']]]
 ];

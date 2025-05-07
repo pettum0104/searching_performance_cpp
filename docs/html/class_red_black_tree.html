@@ -104,6 +104,8 @@ $(function(){initNavTree('class_red_black_tree.html',''); initResizable(true); }
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_red_black_tree-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RedBlackTree Class Reference</div></div>
 </div><!--header-->
@@ -114,13 +116,11 @@ $(function(){initNavTree('class_red_black_tree.html',''); initResizable(true); }
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a16706b7c753cf2d86514cda01840abd9" id="r_a16706b7c753cf2d86514cda01840abd9"><td class="memItemLeft" align="right" valign="top"><a id="a16706b7c753cf2d86514cda01840abd9" name="a16706b7c753cf2d86514cda01840abd9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RedBlackTree</b> ()</td></tr>
-<tr class="memdesc:a16706b7c753cf2d86514cda01840abd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор RBT. Инициализирует дерево пустым. <br /></td></tr>
+<tr class="memitem:a16706b7c753cf2d86514cda01840abd9" id="r_a16706b7c753cf2d86514cda01840abd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16706b7c753cf2d86514cda01840abd9">RedBlackTree</a> ()</td></tr>
+<tr class="memdesc:a16706b7c753cf2d86514cda01840abd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор RBT. Инициализирует дерево пустым.  <br /></td></tr>
 <tr class="separator:a16706b7c753cf2d86514cda01840abd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc4f58dc004c1d8ef4aaa41741ebd33e" id="r_adc4f58dc004c1d8ef4aaa41741ebd33e"><td class="memItemLeft" align="right" valign="top"><a id="adc4f58dc004c1d8ef4aaa41741ebd33e" name="adc4f58dc004c1d8ef4aaa41741ebd33e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>~RedBlackTree</b> ()</td></tr>
-<tr class="memdesc:adc4f58dc004c1d8ef4aaa41741ebd33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор RBT. Освобождает всю память, занятую узлами. <br /></td></tr>
+<tr class="memitem:adc4f58dc004c1d8ef4aaa41741ebd33e" id="r_adc4f58dc004c1d8ef4aaa41741ebd33e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc4f58dc004c1d8ef4aaa41741ebd33e">~RedBlackTree</a> ()</td></tr>
+<tr class="memdesc:adc4f58dc004c1d8ef4aaa41741ebd33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор RBT. Освобождает всю память, занятую узлами.  <br /></td></tr>
 <tr class="separator:adc4f58dc004c1d8ef4aaa41741ebd33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2ea5161257b681fb1d897ca605a366" id="r_ace2ea5161257b681fb1d897ca605a366"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace2ea5161257b681fb1d897ca605a366">insert</a> (<a class="el" href="struct_data_object.html">DataObject</a> obj)</td></tr>
 <tr class="memdesc:ace2ea5161257b681fb1d897ca605a366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставляет новый объект <a class="el" href="struct_data_object.html" title="Структура для хранения данных объекта. Используется во всех структурах данных (массив,...">DataObject</a> в Красно-Черное дерево.  <br /></td></tr>
@@ -131,10 +131,89 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b2d0feac601527d0857e153d3bcee26" id="r_a5b2d0feac601527d0857e153d3bcee26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b2d0feac601527d0857e153d3bcee26">build</a> (const std::vector&lt; <a class="el" href="struct_data_object.html">DataObject</a> &gt; &amp;data)</td></tr>
 <tr class="memdesc:a5b2d0feac601527d0857e153d3bcee26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строит RBT из существующего вектора данных.  <br /></td></tr>
 <tr class="separator:a5b2d0feac601527d0857e153d3bcee26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad61f1288dcc256765fdc4004c0b86f4f" id="r_ad61f1288dcc256765fdc4004c0b86f4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad61f1288dcc256765fdc4004c0b86f4f">leftRotate</a> (<a class="el" href="struct_r_b_t_node.html">RBTNode</a> *x)</td></tr>
+<tr class="memdesc:ad61f1288dcc256765fdc4004c0b86f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет левый поворот вокруг узла x.  <br /></td></tr>
+<tr class="separator:ad61f1288dcc256765fdc4004c0b86f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949b3faf8f861d164af5928086c0d613" id="r_a949b3faf8f861d164af5928086c0d613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a949b3faf8f861d164af5928086c0d613">rightRotate</a> (<a class="el" href="struct_r_b_t_node.html">RBTNode</a> *y)</td></tr>
+<tr class="memdesc:a949b3faf8f861d164af5928086c0d613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет правый поворот вокруг узла y.  <br /></td></tr>
+<tr class="separator:a949b3faf8f861d164af5928086c0d613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae175be02b3b3f87448a1cf62a144036d" id="r_ae175be02b3b3f87448a1cf62a144036d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae175be02b3b3f87448a1cf62a144036d">insertFixup</a> (<a class="el" href="struct_r_b_t_node.html">RBTNode</a> *z)</td></tr>
+<tr class="memdesc:ae175be02b3b3f87448a1cf62a144036d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Восстанавливает свойства Красно-Черного дерева после вставки узла.  <br /></td></tr>
+<tr class="separator:ae175be02b3b3f87448a1cf62a144036d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95afd51f7369350599baf47dc5a7f8fe" id="r_a95afd51f7369350599baf47dc5a7f8fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95afd51f7369350599baf47dc5a7f8fe">searchRecursive</a> (<a class="el" href="struct_r_b_t_node.html">RBTNode</a> *node, const std::string &amp;searchKey, std::vector&lt; <a class="el" href="struct_data_object.html">DataObject</a> &gt; &amp;results) const</td></tr>
+<tr class="memdesc:a95afd51f7369350599baf47dc5a7f8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рекурсивно ищет все объекты с заданным ключом в RBT.  <br /></td></tr>
+<tr class="separator:a95afd51f7369350599baf47dc5a7f8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6345db9d1f92bca24ceff1e16cbed4" id="r_a9c6345db9d1f92bca24ceff1e16cbed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c6345db9d1f92bca24ceff1e16cbed4">destroyRecursive</a> (<a class="el" href="struct_r_b_t_node.html">RBTNode</a> *node)</td></tr>
+<tr class="memdesc:a9c6345db9d1f92bca24ceff1e16cbed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рекурсивно удаляет узлы дерева, освобождая память.  <br /></td></tr>
+<tr class="separator:a9c6345db9d1f92bca24ceff1e16cbed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a12657bc3b0dddc99db5ada09d0791b5e" id="r_a12657bc3b0dddc99db5ada09d0791b5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_b_t_node.html">RBTNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12657bc3b0dddc99db5ada09d0791b5e">root</a></td></tr>
+<tr class="memdesc:a12657bc3b0dddc99db5ada09d0791b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на корневой узел дерева.  <br /></td></tr>
+<tr class="separator:a12657bc3b0dddc99db5ada09d0791b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Класс, реализующий Красно-Черное Дерево. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a16706b7c753cf2d86514cda01840abd9" name="a16706b7c753cf2d86514cda01840abd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16706b7c753cf2d86514cda01840abd9">&#9670;&#160;</a></span>RedBlackTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RedBlackTree::RedBlackTree </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор RBT. Инициализирует дерево пустым. </p>
+
+</div>
+</div>
+<a id="adc4f58dc004c1d8ef4aaa41741ebd33e" name="adc4f58dc004c1d8ef4aaa41741ebd33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc4f58dc004c1d8ef4aaa41741ebd33e">&#9670;&#160;</a></span>~RedBlackTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RedBlackTree::~RedBlackTree </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор RBT. Освобождает всю память, занятую узлами. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5b2d0feac601527d0857e153d3bcee26" name="a5b2d0feac601527d0857e153d3bcee26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b2d0feac601527d0857e153d3bcee26">&#9670;&#160;</a></span>build()</h2>
 
@@ -162,6 +241,39 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Вектор объектов <a class="el" href="struct_data_object.html" title="Структура для хранения данных объекта. Используется во всех структурах данных (массив,...">DataObject</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c6345db9d1f92bca24ceff1e16cbed4" name="a9c6345db9d1f92bca24ceff1e16cbed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c6345db9d1f92bca24ceff1e16cbed4">&#9670;&#160;</a></span>destroyRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RedBlackTree::destroyRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_b_t_node.html">RBTNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рекурсивно удаляет узлы дерева, освобождая память. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Узел для удаления. </td></tr>
   </table>
   </dd>
 </dl>
@@ -201,6 +313,107 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae175be02b3b3f87448a1cf62a144036d" name="ae175be02b3b3f87448a1cf62a144036d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae175be02b3b3f87448a1cf62a144036d">&#9670;&#160;</a></span>insertFixup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RedBlackTree::insertFixup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_b_t_node.html">RBTNode</a> *</td>          <td class="paramname"><span class="paramname"><em>z</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Восстанавливает свойства Красно-Черного дерева после вставки узла. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">z</td><td>Вставленный узел (изначально красный). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad61f1288dcc256765fdc4004c0b86f4f" name="ad61f1288dcc256765fdc4004c0b86f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61f1288dcc256765fdc4004c0b86f4f">&#9670;&#160;</a></span>leftRotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RedBlackTree::leftRotate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_b_t_node.html">RBTNode</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выполняет левый поворот вокруг узла x. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Узел, вокруг которого выполняется поворот. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Правый потомок x не должен быть nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a949b3faf8f861d164af5928086c0d613" name="a949b3faf8f861d164af5928086c0d613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949b3faf8f861d164af5928086c0d613">&#9670;&#160;</a></span>rightRotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RedBlackTree::rightRotate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_b_t_node.html">RBTNode</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выполняет правый поворот вокруг узла y. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>Узел, вокруг которого выполняется поворот. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Левый потомок y не должен быть nullptr. </dd></dl>
+
+</div>
+</div>
 <a id="ae2d39e39cd6721f5fb615235ae4ae79f" name="ae2d39e39cd6721f5fb615235ae4ae79f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2d39e39cd6721f5fb615235ae4ae79f">&#9670;&#160;</a></span>search()</h2>
 
@@ -235,8 +448,77 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a95afd51f7369350599baf47dc5a7f8fe" name="a95afd51f7369350599baf47dc5a7f8fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95afd51f7369350599baf47dc5a7f8fe">&#9670;&#160;</a></span>searchRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RedBlackTree::searchRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_b_t_node.html">RBTNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>searchKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_data_object.html">DataObject</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>results</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рекурсивно ищет все объекты с заданным ключом в RBT. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Текущий узел для проверки. </td></tr>
+    <tr><td class="paramname">searchKey</td><td>Ключ для поиска. </td></tr>
+    <tr><td class="paramname">results</td><td>Вектор для накопления найденных объектов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a12657bc3b0dddc99db5ada09d0791b5e" name="a12657bc3b0dddc99db5ada09d0791b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12657bc3b0dddc99db5ada09d0791b5e">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_b_t_node.html">RBTNode</a>* RedBlackTree::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указатель на корневой узел дерева. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><b>lab2.cpp</b></li>
+<li><a class="el" href="lab2_8cpp.html">lab2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

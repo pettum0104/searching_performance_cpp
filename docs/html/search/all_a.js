@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['rbtnode_0',['RBTNode',['../struct_r_b_t_node.html',1,'RBTNode'],['../struct_r_b_t_node.html#a10ece53f378dae2f8ff4c322a4bbe368',1,'RBTNode::RBTNode()']]],
-  ['redblacktree_1',['RedBlackTree',['../class_red_black_tree.html',1,'RedBlackTree'],['../class_red_black_tree.html#a16706b7c753cf2d86514cda01840abd9',1,'RedBlackTree::RedBlackTree()']]],
-  ['right_2',['right',['../struct_b_s_t_node.html#a864a3c35fef3f0ea7bc9b2fd04c985ed',1,'BSTNode::right'],['../struct_r_b_t_node.html#af86fad6811503657667d45da5fc34f1c',1,'RBTNode::right']]]
+  ['operator_3c_0',['operator&lt;',['../struct_data_object.html#a838610c72779639df977fd071c336200',1,'DataObject']]],
+  ['operator_3c_3c_1',['operator&lt;&lt;',['../struct_data_object.html#a407cb7c41fb9ab462f18a5167041288a',1,'DataObject']]],
+  ['operator_3d_3d_2',['operator==',['../struct_data_object.html#a00832770940cbb047850f567b7f4d92a',1,'DataObject']]],
+  ['operator_3e_3',['operator&gt;',['../struct_data_object.html#a1bca00e307c365eefdb927cc26e7cc06',1,'DataObject']]]
 ];

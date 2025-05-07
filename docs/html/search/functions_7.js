@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['search_0',['search',['../class_red_black_tree.html#ae2d39e39cd6721f5fb615235ae4ae79f',1,'RedBlackTree::search()'],['../class_hash_table.html#a4f5d641f121bda55f1ef84637b832c30',1,'HashTable::search()']]]
+  ['main_0',['main',['../lab2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'lab2.cpp']]],
+  ['measuretime_1',['measureTime',['../lab2_8cpp.html#a00a6ac8c1884fc7b86786100bf130e2d',1,'lab2.cpp']]]
 ];

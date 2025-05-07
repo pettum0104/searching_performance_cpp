@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['search_0',['search',['../class_red_black_tree.html#ae2d39e39cd6721f5fb615235ae4ae79f',1,'RedBlackTree::search()'],['../class_hash_table.html#a4f5d641f121bda55f1ef84637b832c30',1,'HashTable::search()']]]
+  ['parent_0',['parent',['../struct_r_b_t_node.html#ac3c9d3ff3a5600c3e867b616c6e30f6a',1,'RBTNode']]]
 ];
